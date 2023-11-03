@@ -1,0 +1,187 @@
+:root {
+    --bg-dark-color: #19283f;
+    --main-color: #33d1cc;
+    --main-hover: #28c1bb;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    justify-content: center;
+}
+li {
+    list-style: none;
+}
+div {
+    font-size: 14px !important;
+    font-weight: 500;
+}
+p {
+    font-weight: 500;
+}
+.navbar {
+    background-color: var(--bg-dark-color);
+}
+.navbar .navbar-toggler {
+    box-shadow: none;
+    border: none;
+}
+.navbar-expand-lg .navbar-nav .nav-link:focus ,
+.navbar-expand-lg .navbar-nav .nav-link.active ,
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: var(--main-color) !important;
+}
+.navbar .search svg{
+    border-left: 1px solid var(--main-color);
+    color: var(--main-color);
+}
+.main-btn {
+    background-color: var(--red-color);
+    border-color: var(--red-color);
+    color: var(--yellow-color);
+    font-size: 1em;
+}
+.main-btn:hover{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    border-color: var(--red-color);
+}
+.landing {
+    background-color: var(--bg-dark-color);
+    min-height: calc(100vh - 59.15px);
+}
+.landing .main-btn {
+    background-color: var(--red-color);
+    border-color: var(--red-color);
+    font-size: 15px;
+    color: var(--yellow-color);
+}
+.landing .main-btn:hover {
+    background-color: var(--red-color);
+    border-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.main-title::before {
+    content: "";
+    width: 120px;
+    height: 2px;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--main-color);
+    text-align: center;
+}
+
+.features .icon-holder {
+    height: 200px;
+}
+.features .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features .icon-holder .number {
+    font-size: 170px;
+    color: var(--section-color);
+}
+.features .icon-holder .icon {
+    font-size: 70px;
+    color: var(--main-color);
+}
+.features h4 {
+    color: var(--yellow-color);
+}
+.our-work {
+    background-color: var(--section-color);
+}
+.our-work ul .active {
+    color: var(--yellow-color);
+    background-color: var(--red-color);
+}
+.our-work ul li {
+    list-style: none;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+.our-work ul li:not(:first-child):hover {
+    color: var(--red-color);
+}
+.our-work .box {
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.our-work .box::before {
+    content: attr(data-work);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color: #33d1ccbe;
+    transform: translateX(calc(-100% - 5px));
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.our-work .box:hover::before {
+    transform: translateX(0);
+}
+.team {
+    background-color: var(--section-color);
+}
+/* .stuff .row p {
+    font-size: 1em;
+} */
+.team .row h4 {
+    background-color: var(--main-color);
+    font-weight: 600;
+}
+.project {
+    background-color: var(--bg-dark-color);
+}
+.subscribe {
+    background-color: var(--yellow-color);
+}
+.subscribe input[type="text"] {
+    background-color: transparent;
+    border: none;
+    color: white;
+    border-bottom: 2px solid white;
+    outline: none;
+    padding: 0.5em;
+    font-size: 1.2em;
+}
+.subscribe input[type="text"]::placeholder {
+    color: white;
+}
+footer {
+    background-color: var(--bg-dark-color);
+}
+footer .left p:nth-last-child(2) span {
+    color: var(--main-color);
+}
+footer .left p:last-child span {
+    color: var(--yellow-color);
+}
+footer .icons li {
+    color: white;
+}
+.facebook {
+    background-color: #1877f2;
+}
+.twitter {
+    background-color: #1da1f2;
+}
+.linkedin {
+    background-color: #0077b5;
+}
+.youtube {
+    background-color: #ff0000;
+}
